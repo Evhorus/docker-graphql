@@ -25,10 +25,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t evhorus/docker-graphql:0.0.2 .
+        docker build -t evhorus/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push evhorus/docker-graphql:0.0.2
+        docker push evhorus/docker-graphql:latest
         
       
 
